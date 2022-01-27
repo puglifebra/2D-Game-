@@ -4,6 +4,19 @@ namespace _2D_Game_
 {
     class Program
     {
+        // Feedback(jcollard 2022-01-27):
+        // George,
+        // You've clearly spent a **ton** of time working on this project so far.
+        // Great job! These methods are not 100% BUT I think you're ready to start 
+        // by setting up a Unity project to be able to start working.
+        //
+        // Today in class most other students will be working on writing tests. However,
+        // I think it is important for you to get your Unity project set up.
+        // Do your best in class today to get a Unity project added to this repository.
+        // 
+        // Looking forward to seeing your work!
+        // Mx. Collard
+
         public class Waypoints
         {
             // Transformed used for creating an array, a list a items, which the transformed used to a list of game points
