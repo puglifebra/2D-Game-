@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Owner\\Documents\\GitHub\\2D-Game-\\2D-Game-.csproj": {}
+    "d:\\CompSci\\2D-Game-\\2D-Game-.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Owner\\Documents\\GitHub\\2D-Game-\\2D-Game-.csproj": {
+    "d:\\CompSci\\2D-Game-\\2D-Game-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Owner\\Documents\\GitHub\\2D-Game-\\2D-Game-.csproj",
+        "projectUniqueName": "d:\\CompSci\\2D-Game-\\2D-Game-.csproj",
         "projectName": "2D-Game-",
-        "projectPath": "c:\\Users\\Owner\\Documents\\GitHub\\2D-Game-\\2D-Game-.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Owner\\Documents\\GitHub\\2D-Game-\\obj\\",
+        "projectPath": "d:\\CompSci\\2D-Game-\\2D-Game-.csproj",
+        "packagesPath": "C:\\Users\\ghoba\\.nuget\\packages\\",
+        "outputPath": "d:\\CompSci\\2D-Game-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ghoba\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
