@@ -45,6 +45,54 @@
 // Go to void awake 
 ## Void Awake 
 // The points change the amount of points
-// And then the new points are created. 
+// And then the new points are created.
+## 
+![Picture](flowchart-page1.jpg)
+## On Mouse Enter 
+// Set the correct color 
+## Start
+// render the material at the correct color 
+// set the start color 
+## On mouse Exit 
+// Make the material the start color 
+## On mouse Down
+// If there is no turret 
+// Log will say you cant build there 
+// Else Build the turret 
+##
+![Picture](flowchart-page2.jpg)
+## Awake 
+// if the instance is not null 
+// instantiate it 
+// Else write in the log "More than one Build Manager in the Scene!"
+## Start 
+// The turret that is able to be built is the standard turret prefab that is set 
+##
+![Picture](flowchart-page3.jpg)
+## Update 
+// When the key (w,a,s,d) is pressed, the location will change accordingly 
+##
+![Picture](flowchart-page4.jpg)
+## Get Axis 
+// Change the vector position 
+// Will change the scroll speed and the position 
+## Purchase Standard Turret 
+// Log will say "Standard Turret Purchased"
+## Purchase Another Turret 
+// Log will say "Another Turret Purchased"
+##
+![Picture](flowchart-page5.jpg)
+## Start
+// Set the build manager as the build manager 
+## Purchase Standard Turret 
+// The log will state "Standard Turret Purchased"
+// The build manager will be set to create the turret 
+## Purchase Anther Turret 
+// Log will state "Another Turret Purchased"
+// The build manager will be set to create the new turret 
+##
+![Picture](flowchart-page6.jpg)
+## Purchase Standard Turret 
+// The count for the turret will increase by one on the screens
 
 
