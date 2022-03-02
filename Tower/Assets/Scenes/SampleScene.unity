@@ -751,6 +751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 496428949}
     m_Modifications:
+    - target: {fileID: 3372644631730463413, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c53351c6ea0bed94dac0fe245c4a554c, type: 3}
     - target: {fileID: 3372644631730463416, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -837,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3372644631730463417, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_Name
-      value: AmotherTurretItem
+      value: MissileLauncherItem
       objectReference: {fileID: 0}
     - target: {fileID: 3372644631730463418, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -857,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3372644631730463418, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 3372644631730463418, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -12176,7 +12180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 6479451045370871927, guid: a005061cd24063249ae036939d9baed5, type: 3}
-  anotherTurretPrefab: {fileID: 10314363649150962, guid: a670604be3d59aa4ea545f8ea2161135, type: 3}
+  missileLauncherPrefab: {fileID: 795781207018586664, guid: 2b1680eec8482564bb286eefc49e56a0, type: 3}
 --- !u!1001 &1605107529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15447,6 +15451,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 496428949}
     m_Modifications:
+    - target: {fileID: 3372644631730463413, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 41abbf4d09dbb2e4cbcc265da78d8b27, type: 3}
     - target: {fileID: 3372644631730463416, guid: 6ee0ba23385c2114bb4003fbb9c70f45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
