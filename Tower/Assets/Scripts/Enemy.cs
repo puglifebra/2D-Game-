@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 
     private Transform target;
     private int wavepointIndex = 0;
-
+    public bool isDestroyed = false; 
     void Start ()
     {
         target = Waypoints.points[0];

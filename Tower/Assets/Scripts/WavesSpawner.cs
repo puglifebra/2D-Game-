@@ -1,12 +1,14 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections.Generic; 
 using UnityEngine.UI;
+using System.Collections;
+
 public class WavesSpawner : MonoBehaviour
 {
     public Transform enemyPrefab;
 
     public Transform spawnPoint;
-
+    public List<Enemy> enemies = new List<Enemy>();
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
     public Text waveCountdownText;
@@ -39,6 +41,6 @@ public class WavesSpawner : MonoBehaviour
 
     void SpawnEnemy ()
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        enemies.Add(Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation).gameObject.GetComponent<Enemy>());
     }
 }

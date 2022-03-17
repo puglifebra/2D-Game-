@@ -8,6 +8,9 @@ private Transform target;
 public float speed = 70f;
 public float explosionRadius = 0f;
 public GameObject impactEffect;
+public bool isDestroyed = false;
+
+
 public void Seek (Transform _target)
 {
     target = _target;
@@ -38,6 +41,7 @@ public void Seek (Transform _target)
 
     void HitTarget ()
     {
+        Collider [] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5f);
 
@@ -48,8 +52,15 @@ public void Seek (Transform _target)
         {
             Damage(target);
         }
-
-        Destroy(gameObject);
+        
+        foreach (Collider collider in colliders)
+        {
+        if (collider.tag == "Enemy")
+        {
+            isDestroyed = true;
+            gameObject.SetActive(false);
+        }
+        }
     }
 
     void Explode () 
