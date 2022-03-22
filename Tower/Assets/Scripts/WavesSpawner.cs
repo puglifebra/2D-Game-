@@ -13,6 +13,7 @@ public class WavesSpawner : MonoBehaviour
     private float countdown = 2f;
     public Text waveCountdownText;
     private int waveIndex = 1;
+    public PlayerStats Stats;
     void Update ()
     {
         if (countdown <= 0f)
@@ -29,7 +30,7 @@ public class WavesSpawner : MonoBehaviour
 
     IEnumerator SpawnWave ()
     {
-        
+        Stats.GetMoney(enemies);
         for (int i = 0; i < waveIndex; i++)
         {
            SpawnEnemy(); 
