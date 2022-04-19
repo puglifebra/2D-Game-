@@ -12259,6 +12259,7 @@ MonoBehaviour:
   enemies: []
   timeBetweenWaves: 5
   waveCountdownText: {fileID: 327719032}
+  Stats: {fileID: 1603985249}
 --- !u!4 &1603985247
 Transform:
   m_ObjectHideFlags: 0
@@ -12300,7 +12301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 400
-  text: {fileID: 0}
+  text: {fileID: 791049124}
 --- !u!1001 &1605107529
 PrefabInstance:
   m_ObjectHideFlags: 0
