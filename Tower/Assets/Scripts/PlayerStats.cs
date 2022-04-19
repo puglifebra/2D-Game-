@@ -18,8 +18,11 @@ public class PlayerStats : MonoBehaviour
         if (enemies == null) throw new System.Exception("Cannot Process Null Objects");
         foreach (Enemy e in enemies)
         {
-            Money = Money + 5;
-            Destroy(e);
+            if(e.isDestroyed)
+            {
+                Money = Money + 5;
+                Destroy(e);
+            }
         }
         return Money;
     }
