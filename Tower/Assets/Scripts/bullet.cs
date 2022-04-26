@@ -58,6 +58,7 @@ public void Seek (Transform _target)
         if (collider.tag == "Enemy")
         {
             isDestroyed = true;
+            collider.GetComponent<Enemy>().isDestroyed = true;
             gameObject.SetActive(false);
         }
         }
