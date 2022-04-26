@@ -36,6 +36,8 @@ used to manage complexity in your program.
 The first program code segment must show how data have been stored in the list.
 
 ```csharp
+public List<Enemy> enemies = new List<Enemy>();
+//...
 void SpawnEnemy ()
     {
         enemies.Add(Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation).gameObject.GetComponent<Enemy>());
@@ -84,7 +86,7 @@ Explains how the selected list manages complexity in your program code by
 explaining why your program code could not be written, or how it would be
 written differently, if you did not use the list.
 
-It would be difficult to write code that says when each clone is dead, add a specific amount of money to the total amount. If that were to happen, I would need to write code that would have to specifically address every single enemy that is killed. 
+It would be difficult to write code that says when each clone is dead because the game continues to generate an infinite number of enemies, to write a code that is able to address each individual enemy would result in the game only being able to have a limited number of enemies, making my game impossible to have my type of waves without a list. 
 
 ## 3c.
 
@@ -121,9 +123,16 @@ The first program code segment must be a student-developed procedure that:
 The second program code segment must show where your student-developed procedure is being called in your program.
 
 ```csharp
-    void Update()
+   IEnumerator SpawnWave ()
     {
-        text.text = $"Money: {Money}";
+        Stats.GetMoney(enemies);
+        for (int i = 0; i < waveIndex; i++)
+        {
+           SpawnEnemy(); 
+           yield return new WaitForSeconds(0.5f);
+        }
+        
+        waveIndex++;
     }
 ```
 
@@ -131,13 +140,13 @@ The second program code segment must show where your student-developed procedure
 
 Describes in general what the identified procedure does and how it contributes to the overall functionality of the program.
 
-When the method is called, it is supposed the update a text that displays the current amount of money the player has after every wave
+When the method is called, it accepts the list of enemies within the game, it looks to see if the boolean for enemies is true or false, if it's true, Money increases by 5, and then the enemy is destroyed. 
 
 ### 3c iv.
 
 Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else to recreate it.
 
-1. If there are no enemies, print "Cannot Process Null Objects"
+1. If there are no enemies, System throws an exception "Cannot Process Null Objects"
 2. Else See how many enemies there are 
 3. For each enemy that is destroyed
 4. Add 5 to money 
